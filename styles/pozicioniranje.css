@@ -1,0 +1,65 @@
+.div1 p {
+    width: 200px;
+    height: 200px;
+    border: 3px dotted darkblue;
+    padding: 12px; 
+}
+
+.klasa1 {
+    background-color: darkblue;
+}
+
+.klasa2 {
+    background-color: blueviolet;
+}
+
+.div2{
+    position: relative;
+    width: 400px;
+}
+
+.dugme {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    z-index: 2;
+}
+
+.dugme2 {
+    position: absolute;
+    top: 100px;
+    right: 90px;
+    z-index: 1;
+}
+
+/* 
+Staticko pozicioniranje 
+Elementi su poredjani tacno onako kako je definisano u HTML kodu.
+*/
+
+/* 
+Apsolutno pozicioniranje
+Element se nalazi iznad drugih elemenata
+Ovaj element se pozicionira u odnosu na onaj element u kom se nalazi
+*/
+
+/* 
+Fixed pozicioniranje
+U odnosu na ceo dokument, koristi se kada imamo puno da skrolujemo na sajtu.
+
+*/
+
+/* 
+Relativno pozicioniranje
+Pomera se u odnosu na poziciju koju bi imao da je staticki pozicioniran. 
+*/
+
+/* 
+Sticky pozicioniranje
+Header, footer
+*/
+
+
+/*
+Z osa ide iz ekrana ka nama. Svi elementi imaju pocetnu vrednost z index 0. Mozemo da odredjujemo koji ce element biti iznad, a koji ispod na osnovu z indexa.
+*/
