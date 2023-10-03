@@ -1,0 +1,31 @@
+.roditelj{
+    background-color: thistle;
+    color: whitesmoke;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row; /*Omogucava da div predje u sledeci red kad se skupi ekran*/
+    justify-content: space-around; /*Pozicionira elemente u sredinu horizontalno*/
+    height: 250px;
+    align-items: stretch; /*Vertikalno poravnava elemente uz ivicu*/
+    align-content: flex-start; /*Vertikalno poravnava sve elemente uz ivicu*/
+}
+.dete{
+    background-color: aquamarine;
+    width: 250px;
+    height: 100px;
+}
+.dete1{
+    order: 2;
+    flex-shrink: 2; /*Smanjuje velicinu elementa*/
+    align-self: flex-start;
+}
+.dete2{
+    order: 3;
+    flex-shrink: 1;
+}
+.dete3{
+    order: 1;
+    flex-shrink: 1;
+}
