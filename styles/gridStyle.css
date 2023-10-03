@@ -1,0 +1,54 @@
+.roditelj{
+    background-color: thistle;
+    color: whitesmoke;
+    display: grid;
+
+    /* grid-template-columns: 50px 50px 50px; Preko auto siri se onoliko koliko mu stranica dozvoljava */
+    /*Fragmenti su bolji od procenata jer zauzimaju jednake delove*/
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    height: 300px;
+    padding: 10px;
+    justify-items: stretch;
+    justify-content: start;
+    align-items: end;
+}
+.dete{
+    background-color: aquamarine;
+    width: 150px;
+    height: 50px;
+    
+}
+
+.dete2{
+    grid-column: 2/4; /* 2/4 znaci da ce se element prostirati od 2. do 4. kolone */
+    justify-self: end;
+}
+
+.dete4:hover{
+    background-color: blueviolet;
+}
+
+@media (max-width: 700px){
+    .roditelj{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+    
+@media (max-width: 350px){
+    .roditelj{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Grid je mreza koja odredjuje koliko elemenata cemo imati na stranici.*/
+
+/* 
+Pseudo klase - dolazimo do njih kada predjemo preko elementa sa misem
+Hover
+*/
+
+/* 
+Media query - kada se stranica smanji, onda se elementi prebacuju u kolone
+Koristimo kada pristupamo sajtu preko tableta ili telefona
+*/
